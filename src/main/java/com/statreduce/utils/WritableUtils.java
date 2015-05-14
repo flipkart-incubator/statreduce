@@ -31,4 +31,14 @@ public class WritableUtils {
         }
         return list;
     }
+
+    public static DoubleWritable[] toWritableArray(Double[] array) {
+        DoubleWritable[] writableArray = new DoubleWritable[array.length];
+        for(int i=0; i<array.length; i++){
+            writableArray[i] = new DoubleWritable(array[i]);
+        }
+        return writableArray;
+    }
+
+
 }

@@ -2,14 +2,14 @@ package com.statreduce.reducer;
 
 import org.apache.hadoop.io.Writable;
 
-public class ArrayToPrimitiveStatReducer<K extends Writable,V extends Writable> extends AbstractStatReducer<K,V> {
+public class ListStatReducer<K extends Writable,V extends Writable> extends AbstractStatReducer<K,V> {
     private String inputVar;
     private String outputVar;
     private String rFunctionCall;
     private Class inputType;
     private Class outputType;
 
-    public ArrayToPrimitiveStatReducer(String inputVar, String outputVar, String rFunctionCall, Class inputType, Class outputType) {
+    public ListStatReducer(String inputVar, String outputVar, String rFunctionCall, Class inputType, Class outputType) {
         this.inputVar = inputVar;
         this.outputVar = outputVar;
         this.rFunctionCall = rFunctionCall;
