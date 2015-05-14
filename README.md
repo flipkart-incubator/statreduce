@@ -18,7 +18,7 @@ To use this library, add statreduce as dependency:
 
 Extend reducer from ListStatReducer or MatrixStatReducer:
 
-If you're doing a statistical operation on a vector of int/double, use ListStatReducer
+If you're doing statistical operation on a vector of int/double, use ListStatReducer
 ```
 public class TemperatureSummaryReducer extends ListStatReducer {
     public TemperatureSummaryReducer(){
@@ -26,11 +26,11 @@ public class TemperatureSummaryReducer extends ListStatReducer {
     }
 }
 ```
-tempValues is the double vector passed to R
-avgTemp <- mean(tempValues) is the function call invoked in R
-avgTemp is the value returned as Reducer output
+tempValues is the double vector passed to R.
+avgTemp <- mean(tempValues) is the function call invoked in R.
+avgTemp is the value returned as Reducer output.
 
-If you're doing a statistical operation on a matrix of int/double, use MatrixStatReducer:
+If you're doing statistical operation on a matrix of int/double, use MatrixStatReducer:
 ```
 public class MoneyballOnBasePercentageReducer extends MatrixStatReducer {
     public MoneyballOnBasePercentageReducer() {
@@ -40,7 +40,7 @@ public class MoneyballOnBasePercentageReducer extends MatrixStatReducer {
 }
 ```
 This calculates On-base percentage for baseball players by taking playerStats as input and returning obp as output.
-R functions can also be loaded from files.
+R functions can also be loaded from files/hdfs/jar.
 
 Look at MoneyballOnBasePercentageDriver.java or TemperatureSummaryDriver.java for usage examples.
 (Sample data and R functions are in data/ and functions/ dir)
