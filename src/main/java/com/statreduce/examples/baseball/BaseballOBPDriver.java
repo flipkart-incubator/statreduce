@@ -1,6 +1,6 @@
 package com.statreduce.examples.baseball;
 
-import com.statreduce.utils.DoubleArrayWritable;
+import com.statreduce.writable.array.DoubleArrayWritable;
 import org.apache.hadoop.conf.Configuration;
 import org.apache.hadoop.conf.Configured;
 import org.apache.hadoop.fs.Path;

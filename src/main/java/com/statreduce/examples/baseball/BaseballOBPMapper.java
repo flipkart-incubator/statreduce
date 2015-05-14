@@ -1,6 +1,6 @@
 package com.statreduce.examples.baseball;
 
-import com.statreduce.utils.DoubleArrayWritable;
+import com.statreduce.writable.array.DoubleArrayWritable;
 import org.apache.hadoop.io.LongWritable;
 import org.apache.hadoop.io.Text;
 import org.apache.hadoop.mapreduce.Mapper;
