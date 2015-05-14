@@ -47,6 +47,10 @@ public class ListStatReducer<K extends Writable,V extends Writable> extends Abst
         return rFunction;
     }
 
+    public void setrFunction(String rFunction) {
+        this.rFunction = rFunction;
+    }
+
     @Override
     protected String getRFunctionCall() {
         return rFunctionCall;

@@ -7,7 +7,7 @@ import org.apache.hadoop.mapreduce.Mapper;
 
 import java.io.IOException;
 
-public class BaseballOBPMapper extends Mapper<LongWritable, Text, Text, DoubleArrayWritable>{
+public class MoneyballOnBasePercentageMapper extends Mapper<LongWritable, Text, Text, DoubleArrayWritable>{
     private BaseballRecordParser parser = new BaseballRecordParser();
 
     @Override

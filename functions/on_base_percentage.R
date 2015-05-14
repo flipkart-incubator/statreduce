@@ -6,5 +6,5 @@ hbp <- sum(playerStats[,"HBP"])
 ab <- sum(playerStats[,"AB"])
 sf <- sum(playerStats[,"SF"])
 obp <- (h + bb + hbp) / (ab + bb + hbp + sf)
-obp
+round(obp, 3)
 }

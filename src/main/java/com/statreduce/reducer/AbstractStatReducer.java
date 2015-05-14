@@ -16,8 +16,12 @@ public abstract class AbstractStatReducer<K extends Writable, V extends Writable
     }
 
     @Override
-    protected void reduce(K key, Iterable<V> values, Context context) throws IOException, InterruptedException {
+    protected void setup(Context context) throws IOException, InterruptedException {
         initializeRFunction();
+    }
+
+    @Override
+    protected void reduce(K key, Iterable<V> values, Context context) throws IOException, InterruptedException {
         assignRInput(values);
         invokeR();
         context.write(key, (V) getROutputAsWritable());

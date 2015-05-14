@@ -10,7 +10,7 @@ import java.util.List;
 public class MatrixStatReducer<K extends Writable,V extends Writable> extends AbstractStatReducer<K,V> {
     private String inputVar;
     private String outputVar;
-    private final String rFunction;
+    private String rFunction;
     private String rFunctionCall;
     private Class inputType;
     private Class outputType;
@@ -53,6 +53,10 @@ public class MatrixStatReducer<K extends Writable,V extends Writable> extends Ab
     @Override
     protected String getRFunction() {
         return rFunction;
+    }
+
+    public void setrFunction(String rFunction) {
+        this.rFunction = rFunction;
     }
 
     @Override

@@ -5,7 +5,7 @@
     <artifactId>statreduce</artifactId>
     <packaging>jar</packaging>
     <version>0.0.1</version>
-    <name>statreducer</name>
+    <name>statreduce</name>
     <url>http://maven.apache.org</url>
     <repositories>
         <repository>
